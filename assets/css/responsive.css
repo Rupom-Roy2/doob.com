@@ -1,0 +1,325 @@
+@media all and (max-width: 1380px){
+    .container{
+     width: 90%;
+    }
+     .logo{
+         position: inherit;
+         margin: 0;
+     }
+ }
+
+@media all and (max-width: 991px){
+    .container{
+        width: 90%;
+    }
+    .menu{
+        display: none;
+    }
+    /* .menu-bar{
+        display: block !important;
+        flex-direction: column;
+        display: flex;
+    } */
+    .menu-bar-show{
+        display: block;
+        font-size: 2.8rem;
+        margin-left: 3rem;
+        color: var(--color);
+        opacity: 1;
+    }
+    .menu-bar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: rgba(0,0,0,.6);
+        width: 100%;
+        height: 100vh;
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        
+    }
+
+    .menu-bar{
+        display: block;
+        font-size: 2.8rem;
+        margin-left: 3rem;
+        color: var(--color1);
+        opacity: 1;
+        transition: .5s;
+
+        
+        
+    }
+    .menu-bar ul{
+        flex-direction: column;
+        width: 40%;
+        height: 100%;
+        background: dodgerblue;
+        position: absolute;
+        right: -100%;
+        top: 0;
+        transition: .5s;
+        color:#fff;
+        z-index: 111;
+        padding-left:5rem ;
+    }
+    .menu-bar-hide{
+        display: block;
+        font-size: 4rem;
+        padding: 2rem;
+    }
+    
+    .menu-bar ul.slider{
+        right: 0;
+    }
+    .header-area{
+        background: none;
+    }
+    .header-image{
+        width: 100%;
+        display: block;
+        float: right;
+    }
+    .header-image img{
+        width: 70%;
+        background-size: contain;
+        padding: 5rem 0;
+        float: right;
+        background-repeat: no-repeat;
+        
+        
+    }
+    .about-text h1 {
+        font-size: 6rem;
+    }
+    .btn2 a {
+        padding: 1.4rem 2.5rem;
+    }
+    .services {
+         gap: 3rem;
+    }
+    .covered-text {
+        grid-column: span 12;
+        width: 100%;
+        margin-bottom: 5rem;
+     }
+     .covered {
+        margin-bottom: 8rem;}
+     .covered-box {
+        grid-column: span 12;    
+     }
+    .work-box {
+        grid-column: span 6;
+      }
+    .deatiles-img {
+        flex: 0 0 100%;
+    }
+    .deatiles-text {
+        flex: 0 0 100%;
+        padding: 20px;
+        order: -1;
+    }
+   .input-area {
+        gap: 3rem;
+   }
+    .footer-menu{
+        display: block;
+    }
+}
+
+@media all and (max-width: 767px){
+   
+    .header-area {
+        margin-bottom: 0rem;
+        z-index: 0;
+        position: relative;
+       
+        
+    }
+    .covered-text {
+        width: 70%;
+        margin-bottom: 3rem;
+    }
+    .about-text {
+        margin-top: 9rem;
+        max-width: 35rem;
+        width: 100%;
+    }
+    .about-text h1 {
+        font-size: 4.8rem;
+    }
+    .btn2 a {
+        padding: 1.2rem 1.8rem;
+    }
+    .deatiles {
+        margin-bottom: 10rem;
+    }
+    .deatiles-img {
+        flex: 0 0 100%;
+    }
+    .deatiles-text {
+        flex: 0 0 100%;
+        padding: 20px;
+    }
+    .deatiles-text .icon{
+        float: right;
+    }
+    .creative {
+        margin-bottom: 10rem;
+    }
+    .creative h2 {
+        font-size: 4rem;
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+    .covered-box h4 {
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+    }
+    .blog {
+        margin-bottom: 10rem;
+    }
+    .blog h2 {
+        font-size: 4rem;
+        
+        margin-bottom: 4rem;
+    }
+    .blog-box {
+        grid-column: span 12;
+    }
+    .contact {
+        margin-bottom: 7rem;
+    }
+    .input-area {
+        gap: 3rem;
+   }
+   .footer-text h2 {
+    color: var(--color2);
+    font-size: 4rem;
+    font-weight: 600;
+    }
+    .footer-menu ul li a{
+        color: var(--color1);
+        margin: 0 1.5rem;
+      }
+}
+
+
+@media all and (max-width:576px){
+   .header-btn{
+    display: none;
+   }
+   .menu-bar-show{
+    display: block !important;
+   }
+    .work-box {
+        grid-column: span 12;
+      }
+    
+    .blog-box {
+        grid-column: span 12;
+    }
+    .deatiles-img {
+        flex: 0 0 100%;
+    }
+    .deatiles-text {
+        flex: 0 0 100%;
+        padding: 20px;
+    }
+    .creative {
+        margin-bottom: 7rem;
+    }
+    .creative h2 {
+        font-size: 4rem;
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+    .covered-text {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .contact-text h5{
+        font-size: 4rem;
+        
+        margin-bottom: 4rem;
+      }
+      .email, .subject {
+        grid-column: span 12;
+        width: 100%;
+    }
+    .message{
+        resize:vertical;
+      }
+      .footer-text  h3 {
+     
+        margin-bottom: 2rem;
+    }
+    .footer-text h2 {
+        margin-bottom: 2rem;
+        font-size: 3.8rem;
+    }
+      .footer-menu ul{
+        flex-wrap: wrap;
+      }
+      .footer-menu ul li{
+        margin-top: 1rem;
+      }
+      .footer-text p {
+        margin-top: 2rem;
+    }
+    .footer-icon {
+        margin: 3rem auto;
+    }
+    .footer-icon a {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+}
+@media all and (max-width:400px){
+    h2, h5{
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+    }
+    
+    .about-text h1 {
+        font-size: 3.4rem;
+    }
+    .link {
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .services {
+        gap: 3rem 1rem;
+    }
+    .header-image img {
+        width: 100%;
+    }
+    .creative h2 {
+        font-size: 3.5rem;
+        
+    }
+    .icon{
+        margin-bottom: 1rem;
+    }
+    .input-area {
+        gap: 3rem 1rem;
+    }
+    .footer-icon a i {
+       font-size: 3rem;
+        padding: 0rem;
+    }
+    .menu-bar ul {
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        background: dodgerblue;
+        position: absolute;
+        right: -100%;
+        top: 0;
+        transition: .5s;
+        color: #fff;
+        z-index: 111;
+        padding-left: 5rem;
+    }
+}

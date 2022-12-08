@@ -1,0 +1,606 @@
+/* 
+Templet Name:Doob
+Templet Url:webdesginerrup.com
+Author: Rupom Roy
+Authoe Url: webdesginerrup.rupom.com
+Tag: Semple Agency Templet
+*/
+/* 
+ Header
+ About
+ Contect
+ Footer
+  */
+/*******Rupom*********/
+    /* common css */
+/*******Rupom*********/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&display=swap");
+*{
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: var(--color);
+   font-size: 1.8rem;
+   font-weight: 600;
+  
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  color:var(--color);
+}
+h1{
+  font-size: 7rem;
+  font-weight: 600;
+}
+h2{
+font-size: 4.5rem;
+font-weight: 600;
+line-height: 6rem;
+}
+h3{
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+.h4{
+  font-weight: 600;
+}
+h5{
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+.container{
+  max-width: 117rem;
+  width: 100%;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.space{
+  justify-content: space-between;
+  
+}
+.btn1 a{
+  padding: 1.5rem 3rem;
+  box-shadow: 2.5px 4.33px 10px 0px rgba(25, 45, 51, 0.15);
+  background:var(--color1);
+  color: var(--color2);
+  transition: .5s;
+  font-weight: 600;
+  
+}
+.btn1 a:hover{
+  background:var(--color);
+  color: var(--color1);
+  
+}
+.link{
+	margin-left: 3rem;
+}
+
+
+.btn2 a{
+  padding: 1.5rem 3rem;
+  border-radius: 2.5rem;
+  background: var(--color2);
+  color: var(--color1);
+  font-size: 1.8rem;
+
+}
+:root {
+  --color: #314584;
+  --color1: #fff;
+  --color2: #ff3946;
+  --color-p:#6e757a;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  /* overflow-x: hidden; */
+}
+/*******Rupom*********/
+    /* header css */
+/*******Rupom*********/
+
+.header-area{
+ background: url(../img/header-banner.png) no-repeat scroll top right /contain;
+ height: 100vh;
+ margin-bottom: 15rem;
+ 
+}
+.header-area> img{
+  display: none;
+}
+.header-top{
+  position: relative;
+  margin-top: 5rem;
+}
+
+.logo{
+  max-width: 30%;
+  position: absolute;
+  margin-left: -10rem;
+}
+.menu ul,.footer-menu ul{
+  display: flex;
+}
+
+.menu ul li a{
+  margin-right: 4rem;
+  border-bottom: .2rem solid transparent; 
+  transition: .5s;
+}
+
+.menu ul li a:hover{
+  border-bottom: .2rem solid var(--color2);
+  color: var(--color2);
+}
+.header-btn{
+  display: flex;
+  align-items: center;
+}
+.header-btn select{
+font-size: 1.8rem;
+font-weight: 400;
+background:transparent;
+border: none;
+margin-right: 2rem;
+}
+.menu-bar-show,.menu-bar-hide{
+  display: none;
+}
+.header-image{
+  display: none;
+}
+/*******Rupom*********/
+    /* About css */
+/*******Rupom*********/
+
+.about-text {
+  margin-top: 10rem;
+  max-width: 55rem;
+  width: 100%;
+}
+
+.about-text h1{
+ 
+  margin-bottom: 5rem;
+}
+.about-text P{
+  line-height: 2.7rem;
+  font-weight: 400;
+  color:var(--color-p);
+  margin-bottom: 5rem;
+}
+.btn2 a{
+  transition: .5s;
+  box-shadow: 2.5px 4.33px 10px 0px rgba(255, 57, 70, 0.15);
+}
+.btn2 a:hover{
+background:var(--color);
+box-shadow: 2.5px 4.33px 10px 0px rgba(255, 57, 70, 0.15);
+
+}
+
+/*******Rupom*********/
+    /* services css */
+/*******Rupom*********/
+.covered{
+  margin-bottom: 15rem;
+ position: relative;
+ 
+}
+.covered::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/shape/1.png) no-repeat;
+  width: 30rem;
+  height: 97rem;
+  z-index: -1;
+  background-size:auto 60%; 
+}
+.services{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  gap: 3rem;
+  align-items: center;
+}
+.covered-text{
+  grid-column: span 4;
+  box-sizing: border-box;
+}
+.covered-text h2{
+  margin-bottom: 5rem;
+}
+.covered-text .btn2 a{
+background:var(--color2);
+color: var(--color1) !important;
+font-size: 14px;
+}
+.covered-text .btn2 a:hover{
+ background: var(--color);
+
+}
+
+.covered-box{
+  grid-column: span 4;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2.5px 4.33px 10px 0px rgba(25, 45, 51, 0.15);
+  padding: 3rem;
+  height: 100%;
+}
+.covered-box img{
+  margin-bottom: 6rem;
+}
+.covered-box h4{
+  font-size: 2.8rem;
+  margin-bottom: 4rem;
+}
+.covered-box p{
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+/*******Rupom*********/
+    /* deatiles css */
+/*******Rupom*********/
+.deatiles{
+  margin-bottom: 15rem;
+  position: relative;
+}
+.deatiles::after{
+  content: '';
+  position: absolute;
+  top: -20%;
+  right:0;
+  background: url(../img/shape/2.png) no-repeat;
+  width: 17rem;
+  height: 75rem;
+  z-index: -1;
+  background-size:auto 60%; 
+}
+.deatiles-img{
+  flex: 0 0 calc(50% - 2rem);
+}
+.deatiles-img img{
+  width: 100%;
+}
+.deatiles-text{
+  flex: 0 0 calc(50% - 2rem);
+  padding: 20px;
+}
+.deatiles-text h4{
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color2);
+  margin-bottom:3rem;
+}
+.deatiles-text h5{
+  margin-bottom: 3rem;
+}
+.deatiles-text p{
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom:3rem;
+  line-height: 2.4rem;
+}
+.icon {
+font-size: 2.4rem;
+color: var(--color);
+transition: .5s;
+}
+.icon i:hover{
+  color: var(--color2);
+}
+.icon span i{
+  margin-right: 20px;
+  color: var(--color-p);
+}
+/*******Rupom*********/
+    /* creative css */
+/*******Rupom*********/
+.creative{
+  position: relative;
+  margin-bottom: 15rem;
+}
+.creative::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/shape/3.png) no-repeat;
+  width:40%;
+  height: 90rem;
+  z-index: -1;
+  background-size:auto 100%; 
+}
+.work{
+  gap: 30px;
+}
+.work-box{
+  background:var(--color-p);
+  width: 100%;
+  height: 28rem;
+  grid-column: span 4;
+  overflow: hidden;
+  position: relative;
+  
+  
+}
+.work-box img{
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  object-fit: cover;
+}
+.work-box:hover img{
+  transform: scale(1.1);
+}
+.work-text{
+  position:absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background:#ff394667;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  
+  z-index: 1;
+  
+}
+.work-text .icon a i{
+  color: var(--color-p);
+  font-size: 4.8rem;
+  opacity: 1;
+}
+.work-text .icon a i:hover{
+  color: var(--color1);
+
+}
+.work-box:hover .work-text{
+  left: 0;
+}
+.work-box:hover .work-text .icon a i{
+  opacity: 1;
+}
+.creative h2{
+  
+  width: 70%;
+  margin-bottom: 5rem;
+  font-weight: 600;
+}
+.creative h3{
+  text-align: center;
+  margin-top: 5rem;
+}
+.blog {
+  margin-bottom: 15rem;
+  position: relative;
+}
+.blog::after{
+  content:'';
+  position: absolute;
+ 
+  background: url(../img/shape/4.png) no-repeat ;
+  width: 40rem;
+  height: 67rem;
+  z-index: -11;
+  background-size:auto 100%; 
+  top: 0;
+  right:0;
+}
+
+.blog h3{
+  
+  color: var(--color2);
+  
+  margin-bottom: 2rem;
+}
+.blog h2{
+  margin-bottom: 5rem;
+}
+.blog-box{
+  box-shadow: 2.5px 4.33px 10px 0px rgba(25, 45, 51, 0.15);
+  padding: 2rem;
+  position: relative;
+  grid-column: span 4;
+}
+.blog-box::after{
+  position: absolute;
+  content: "";
+  width: 10%;
+  height: 10%;
+  margin: 0 auto;
+  color: var(--color1);
+  background:var(--color2);
+  visibility: visible;
+  opacity: 0;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: .5s;
+}
+.blog-box:hover::after{
+width: 100%;
+height: 100%;
+visibility: visible;
+opacity: 1;
+z-index: -2;
+}
+.blog-box h4{
+  font-size: 2.4rem;
+  margin-bottom:2rem ;
+}
+.blog-box span{ 
+  font-size: 1.4rem;
+  color: var(--color);
+  margin-bottom: 4rem;
+  display: block;
+}
+.blog-box p{
+  font-weight: 400;
+}
+.right-icon{
+float: right;
+font-size: 3.2rem;
+font-weight: 900;
+margin-right: 2.5rem;
+}
+.blog-box:hover h4, .blog-box:hover span, .blog-box:hover p, .blog-box:hover .right-icon a i{
+  color:var(--color1);
+}
+.right-icon a i:hover{
+  color: var(--color1);
+}
+/*******Rupom*********/
+    /* contact css */
+/*******Rupom*********/
+.contact{
+  margin-bottom: 10rem;
+}
+.contact-text{
+  flex: 0 0 100%;
+}
+.contact-text h4{
+  color: var(--color2);
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.contact-text h5{
+  margin-bottom: 5rem;
+}
+.contact-from{
+  flex: 0 0 100%;
+}
+.contact-from > form{
+  width: 100%;
+}
+
+textarea,input{
+  background-color: #f4fafe;
+  border: none;
+  padding: 1.5rem 2rem;
+  border-radius: .7rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #314584;
+  border: none;
+  outline: none;
+  border-bottom: 0.4rem solid transparent;
+}
+textarea:focus,input:focus{
+  border-bottom: 0.4rem solid #93a9f0;
+}
+textarea::placeholder, input::placeholder{
+  color: var(--color);
+  opacity: 1;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.input-area{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 3rem;
+  align-items: center;
+  
+}
+.email, .subject{
+  grid-column: span 6;
+  width: 100%;
+}
+.message{
+  grid-column: span 12;
+  width: 100%;
+  resize: vertical;
+  margin-bottom: 2rem;
+  
+}
+.submit{
+  grid-column: span 12;
+  text-align: center;
+  
+}
+.submit input{
+  color: var(--color1);
+  background:var(--color2);
+  padding: 1.5rem 2.5rem;
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: none;
+  transition: .5s;
+}
+
+.submit input:hover{
+  background:var(--color);
+}
+/*******Rupom*********/
+    /* footer css */
+/*******Rupom*********/
+footer{
+  background:var(--color);
+}
+.footer-text{
+  margin-top:5rem ;
+  text-align: center;
+  flex: 0 0 100%;
+ 
+ 
+}
+.footer-text h3{
+  color: var(--color1);
+  margin-bottom: 3rem;
+}
+.footer-text h2{
+  color: var(--color2);
+  margin-bottom: 3rem;
+  
+}
+.footer-menu ul{
+
+justify-content: center;
+}
+.footer-menu ul li a{
+  color: var(--color1);
+  margin: 0 2rem;
+}
+.footer-text p{
+  color: var(--color1);
+  margin-top: 4rem;
+}
+.footer-icon{
+  margin: 2.5rem auto;
+}
+.footer-icon a i{
+  color: var(--color1);
+  font-size: 4rem;
+  padding: 2rem;
+  transition: .5s;
+ 
+}
+.footer-icon a i:hover{
+  color: #ff3946;
+  transform: scale(1.1);
+}
