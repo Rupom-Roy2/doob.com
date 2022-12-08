@@ -26,6 +26,7 @@
         margin-left: 3rem;
         color: var(--color);
         opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     }
     .menu-bar{
         position: fixed;
@@ -36,6 +37,7 @@
         height: 100vh;
         display: block;
         opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
         visibility: visible;
         
     }
@@ -46,19 +48,25 @@
         margin-left: 3rem;
         color: var(--color1);
         opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -webkit-transition: .5s;
         transition: .5s;
 
         
         
     }
     .menu-bar ul{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         width: 40%;
         height: 100%;
         background: dodgerblue;
         position: absolute;
         right: -100%;
         top: 0;
+        -webkit-transition: .5s;
         transition: .5s;
         color:#fff;
         z-index: 111;
@@ -100,25 +108,34 @@
          gap: 3rem;
     }
     .covered-text {
-        grid-column: span 12;
+        -ms-grid-column: span 12;
+            grid-column: span 12;
         width: 100%;
         margin-bottom: 5rem;
      }
      .covered {
         margin-bottom: 8rem;}
      .covered-box {
-        grid-column: span 12;    
+        -ms-grid-column: span 12;
+            grid-column: span 12;    
      }
     .work-box {
-        grid-column: span 6;
+        -ms-grid-column: span 6;
+            grid-column: span 6;
       }
     .deatiles-img {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
     }
     .deatiles-text {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
         padding: 20px;
-        order: -1;
+        -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+                order: -1;
     }
    .input-area {
         gap: 3rem;
@@ -156,10 +173,14 @@
         margin-bottom: 10rem;
     }
     .deatiles-img {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
     }
     .deatiles-text {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
         padding: 20px;
     }
     .deatiles-text .icon{
@@ -186,7 +207,8 @@
         margin-bottom: 4rem;
     }
     .blog-box {
-        grid-column: span 12;
+        -ms-grid-column: span 12;
+            grid-column: span 12;
     }
     .contact {
         margin-bottom: 7rem;
@@ -214,17 +236,23 @@
     display: block !important;
    }
     .work-box {
-        grid-column: span 12;
+        -ms-grid-column: span 12;
+            grid-column: span 12;
       }
     
     .blog-box {
-        grid-column: span 12;
+        -ms-grid-column: span 12;
+            grid-column: span 12;
     }
     .deatiles-img {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
     }
     .deatiles-text {
-        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
         padding: 20px;
     }
     .creative {
@@ -245,7 +273,8 @@
         margin-bottom: 4rem;
       }
       .email, .subject {
-        grid-column: span 12;
+        -ms-grid-column: span 12;
+            grid-column: span 12;
         width: 100%;
     }
     .message{
@@ -260,7 +289,8 @@
         font-size: 3.8rem;
     }
       .footer-menu ul{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
       }
       .footer-menu ul li{
         margin-top: 1rem;
@@ -310,13 +340,17 @@
         padding: 0rem;
     }
     .menu-bar ul {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         width: 80%;
         height: 100%;
         background: dodgerblue;
         position: absolute;
         right: -100%;
         top: 0;
+        -webkit-transition: .5s;
         transition: .5s;
         color: #fff;
         z-index: 111;
