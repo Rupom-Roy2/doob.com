@@ -85,13 +85,14 @@
         background: none;
     }
     .header-image{
+        
         width: 100%;
         display: block;
         float: right;
+       
     }
     .header-image img{
         width: 70%;
-        background-size: contain;
         padding: 5rem 0;
         float: right;
         background-repeat: no-repeat;
@@ -105,7 +106,7 @@
         padding: 1.4rem 2.5rem;
     }
     .services {
-         gap: 3rem;
+         grid-gap: 3rem;
     }
     .covered-text {
         -ms-grid-column: span 12;
@@ -138,7 +139,7 @@
                 order: -1;
     }
    .input-area {
-        gap: 3rem;
+        grid-gap: 3rem;
    }
     .footer-menu{
         display: block;
@@ -214,7 +215,7 @@
         margin-bottom: 7rem;
     }
     .input-area {
-        gap: 3rem;
+        grid-gap: 3rem;
    }
    .footer-text h2 {
     color: var(--color2);
@@ -320,7 +321,7 @@
         margin-top: 2rem;
     }
     .services {
-        gap: 3rem 1rem;
+        grid-gap: 3rem 1rem;
     }
     .header-image img {
         width: 100%;
@@ -333,7 +334,7 @@
         margin-bottom: 1rem;
     }
     .input-area {
-        gap: 3rem 1rem;
+       grid-gap: 3rem 1rem;
     }
     .footer-icon a i {
        font-size: 3rem;
